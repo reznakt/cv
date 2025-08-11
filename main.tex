@@ -1,0 +1,130 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\iftutex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\definecolor{skyblue}{HTML}{299ddb}
+\definecolor{blue}{HTML}{2979db}
+
+\colorlet{name}{black}
+\colorlet{tagline}{skyblue}
+\colorlet{heading}{blue}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{skyblue}
+\colorlet{accent}{skyblue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+\name{Tomáš Režňák}
+\tagline{Software Developer}
+
+\personalinfo{%
+	\location{Velké Meziříčí, Czech Republic}
+	\email{tomas.reznak@volny.cz}
+	\linkedin{reznakt}
+	\github{reznakt}
+	\printinfo{\faGitlab}{reznakt}[https://gitlab.com/reznakt]
+}
+
+\makecvheader
+\vspace{1cm}
+\columnratio{0.5}
+
+\begin{paracol}{2}
+	\cvsection{Experience}
+
+	\cvevent{Associate Software Engineer}{Siemens}{May 2022 -- Sep 2024}{Brno}
+	\begin{itemize}
+		\item Backend developer
+	\end{itemize}
+
+	\divider
+
+	\cvevent{Data entry}{Centrum dopravního výzkumu, v. v. i.}{July 2019}{Brno}
+	\begin{itemize}
+		\item Data entry
+	\end{itemize}
+
+	\bigskip
+	\cvsection{Projects}
+
+	\cvevent{svglab}{Bachelor's thesis $\mid$ Faculty of Informatics, Masaryk University}{Oct 2024 -- present}{}
+	\begin{itemize}
+		\item An open-source manipulation library for Scalable Vector Graphics (SVG)
+		\item Bachelor's thesis
+	\end{itemize}
+
+	\divider
+
+	\cvevent{ray-casting}{Personal project}{May 2023 -- present}{}
+	\begin{itemize}
+		\item A simple ray-caster built with C99 and SDL2
+		\item includes a test runner make from scratch
+		\item built with Emscripten to allow people to play online
+	\end{itemize}
+
+	\switchcolumn
+	\cvsection{Strengths}
+
+	\cvtag{Eye for detail}
+	\cvtag{Enthusiastic}
+	\cvtag{Quick learner} \\
+	\cvtag{Good sense for code quality}
+	\cvtag{Versatile}
+
+	\bigskip
+	\cvsection{Technology}
+
+	\cvtag{\faPython Python}
+	\cvtag{\faJs JavaScript}
+	\cvtag{\faJs TypeScript}
+	\cvtag{\faLaptopCode C}
+	\cvtag{\faNodeJs Node.js}
+	\cvtag{\faDocker Docker}
+	\cvtag{\faGit* Git}
+	\cvtag{\faGithub GitHub}
+	\cvtag{\faGitlab GitLab}
+	\cvtag{\faTerminal Bash}
+	\cvtag{\faLinux Linux}
+
+	\bigskip
+	\cvsection{Education}
+
+	\cvevent{Bachelor's degree\ $\mid$ Programming and development}{Faculty of Informatics, Masaryk University}{Sep 2021 -- Jun 2025}{}
+	Thesis title: A Manipulation Library for Scalable Vector Graphics
+
+	\bigskip
+	\cvsection{Languages}
+
+	\cvskill{Czech}{5}
+	\divider
+	\cvskill{English}{4.5}
+	\divider
+	\cvskill{German}{0.5}
+\end{paracol}
+\end{document}
