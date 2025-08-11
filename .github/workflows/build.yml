@@ -18,10 +18,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4.2.2
+
       - name: Compile CV
         uses: xu-cheng/latex-action@3.2.0
         with:
           root_file: cv.tex
+
       - name: Upload PDF
         uses: actions/upload-artifact@v4.6.0
         with:
@@ -42,11 +44,19 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+
       - name: Download PDF
         uses: actions/download-artifact@v4.1.8
         with:
           name: cv.pdf
           path: github-pages/
+
+      - name: Copy static content
+        run: |
+          mkdir -p github-pages/
+          cp -r static/* github-pages/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5.0.0
