@@ -48,6 +48,11 @@ jobs:
           name: cv.pdf
           path: github-pages/
 
+      - name: Copy static content
+        run: |
+          mkdir -p github-pages/
+          cp -r static/* github-pages/
+
       - name: Setup Pages
         uses: actions/configure-pages@v5.0.0
 
