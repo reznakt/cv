@@ -3,6 +3,15 @@
 \geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
 
 \usepackage{paracol}
+\usepackage[a-1b]{pdfx}
+\usepackage{simpleicons}
+\usepackage{csquotes}
+
+\begin{filecontents*}{\jobname.xmpdata}
+    \Title{CV - Tomáš Režňák}
+    \Author{Tomáš Režňák}
+    \Subject{Curriculum Vitae}
+\end{filecontents*}
 
 \iftutex
   \setmainfont{Roboto Slab}
@@ -16,16 +25,13 @@
 
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-\definecolor{DarkPastelRed}{HTML}{450808}
-\definecolor{PastelRed}{HTML}{8F0D0D}
 \definecolor{GoldenEarth}{HTML}{E7D192}
 \definecolor{skyblue}{HTML}{299ddb}
-\definecolor{blue}{HTML}{2979db}
 
 \colorlet{name}{black}
 \colorlet{tagline}{skyblue}
-\colorlet{heading}{blue}
-\colorlet{headingrule}{GoldenEarth}
+\colorlet{heading}{black}
+\colorlet{headingrule}{skyblue}
 \colorlet{subheading}{skyblue}
 \colorlet{accent}{skyblue}
 \colorlet{emphasis}{SlateGrey}
@@ -60,15 +66,72 @@
 
 	\cvevent{Associate Software Engineer}{Siemens}{May 2022 -- Sep 2024}{Brno}
 	\begin{itemize}
-		\item Backend developer
+		\item Worked as a backend developer in a team of 6 to create a web application for remote control of industrial power supply units (PSUs) and uninterruptible power supplies (UPSs).
+		\item Used industrial communication protocols like DCP and OPC UA to communicate with devices.
+		\item Used TypeScript, Node.js, and Express to create RESTful APIs for the application.
+		\item Used GitLab to set up a complex CI/CD pipeline for the project.
+		\item Regularly participated in code reviews and provided feedback to team members.
+		\item Used tools like TurboRepo and pnpm to manage project builds and dependencies.
+		\item Interviewed candidates for the team and provided feedback on their technical skills.
 	\end{itemize}
 
 	\divider
 
-	\cvevent{Data entry}{Centrum dopravního výzkumu, v. v. i.}{July 2019}{Brno}
+	\cvevent{Data entry}{Centrum dopravního výzkumu, v. v. i.}{Jul 2019 --- Aug 2019}{Brno}
 	\begin{itemize}
-		\item Data entry
+		\item Analyzed traffic data and entered it into a database.
+		\item Worked on a project to analyze traffic data in selected areas of the Czech Republic and Slovakia.
+		\item Worked on a project to analyze traffic signs to aid in the development of autonomous vehicles.
 	\end{itemize}
+
+	\cvsection{Education}
+
+	\cvevent{Bachelor's degree\ $\mid$ Programming and development}{Faculty of Informatics, Masaryk University}{Sep 2021 -- Jun 2025}{Brno}
+	\begin{itemize}
+		\item Dean's Award for an Outstanding Final Thesis (\enquote{A Manipulation Library for Scalable Vector Graphics})
+	\end{itemize}
+
+	\bigskip
+	\cvsection{Languages}
+	\medskip
+
+	\cvskill{Czech}{5}
+	\divider
+	\cvskill{English}{4.5}
+	\divider
+	\cvskill{German}{0.5}
+
+	\switchcolumn
+
+	\cvsection{Technology}
+	\medskip
+
+	\cvtag{\faPython Python}
+	\cvtag{\faJs JavaScript}
+	\cvtag{\faJs TypeScript}
+	\cvtag{\simpleicon{c} C}
+	\cvtag{\faNodeJs Node.js}
+	\cvtag{\faDocker Docker}
+	\cvtag{\faGit* Git}
+	\cvtag{\faGithub GitHub}
+	\cvtag{\faGitlab GitLab}
+	\cvtag{\simpleicon{gnubash} Bash}
+	\cvtag{\faLinux Linux}
+	\cvtag{\faReact React} \\
+	\cvtag{\simpleicon{nestjs} Nest.js}
+	\cvtag{\simpleicon{express} Express}
+	\cvtag{\simpleicon{prisma} Prisma}
+	\cvtag{\simpleicon{bun} Bun}
+
+	\bigskip
+	\cvsection{Strengths}
+	\medskip
+
+	\cvtag{Eye for detail}
+	\cvtag{Enthusiastic}
+	\cvtag{Quick learner} \\
+	\cvtag{Good sense for code quality}
+	\cvtag{Versatile}
 
 	\bigskip
 	\cvsection{Projects}
@@ -84,47 +147,8 @@
 	\cvevent{ray-casting}{Personal project}{May 2023 -- present}{}
 	\begin{itemize}
 		\item A simple ray-caster built with C99 and SDL2
-		\item includes a test runner make from scratch
+		\item includes a test runner made from scratch
 		\item built with Emscripten to allow people to play online
 	\end{itemize}
-
-	\switchcolumn
-	\cvsection{Strengths}
-
-	\cvtag{Eye for detail}
-	\cvtag{Enthusiastic}
-	\cvtag{Quick learner} \\
-	\cvtag{Good sense for code quality}
-	\cvtag{Versatile}
-
-	\bigskip
-	\cvsection{Technology}
-
-	\cvtag{\faPython Python}
-	\cvtag{\faJs JavaScript}
-	\cvtag{\faJs TypeScript}
-	\cvtag{\faLaptopCode C}
-	\cvtag{\faNodeJs Node.js}
-	\cvtag{\faDocker Docker}
-	\cvtag{\faGit* Git}
-	\cvtag{\faGithub GitHub}
-	\cvtag{\faGitlab GitLab}
-	\cvtag{\faTerminal Bash}
-	\cvtag{\faLinux Linux}
-
-	\bigskip
-	\cvsection{Education}
-
-	\cvevent{Bachelor's degree\ $\mid$ Programming and development}{Faculty of Informatics, Masaryk University}{Sep 2021 -- Jun 2025}{}
-	Thesis title: A Manipulation Library for Scalable Vector Graphics
-
-	\bigskip
-	\cvsection{Languages}
-
-	\cvskill{Czech}{5}
-	\divider
-	\cvskill{English}{4.5}
-	\divider
-	\cvskill{German}{0.5}
 \end{paracol}
 \end{document}

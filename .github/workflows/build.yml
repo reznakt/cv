@@ -18,10 +18,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v5.0.0
+
       - name: Compile CV
         uses: xu-cheng/latex-action@4.0.0
         with:
           root_file: cv.tex
+          docker_image: ghcr.io/xu-cheng/texlive-alpine:20250701
+
       - name: Upload PDF
         uses: actions/upload-artifact@v4.6.2
         with:
@@ -32,7 +35,7 @@ jobs:
     needs: build
 
     concurrency:
-      group: "pages"
+      group: pages
       cancel-in-progress: false
 
     runs-on: ubuntu-latest
@@ -42,6 +45,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v5.0.0
+
       - name: Download PDF
         uses: actions/download-artifact@v5.0.0
         with:
