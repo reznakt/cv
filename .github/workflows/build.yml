@@ -23,6 +23,7 @@ jobs:
         uses: xu-cheng/latex-action@3.2.0
         with:
           root_file: cv.tex
+          docker_image: ghcr.io/xu-cheng/texlive-alpine:20250701
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4.6.0
