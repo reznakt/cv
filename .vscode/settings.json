@@ -16,5 +16,6 @@
   "latex-workshop.linting.run": "onType",
   "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.latex.recipe.default": "latexmk (latexmkrc)",
-  "latex-workshop.message.error.show": false
+  "latex-workshop.message.error.show": false,
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click"
 }
