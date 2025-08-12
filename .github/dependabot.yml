@@ -1,25 +1,25 @@
 version: 2
 updates:
-  - package-ecosystem: "devcontainers"
-    directory: "/"
+  - package-ecosystem: devcontainers
+    directory: /
     schedule:
-      interval: "weekly"
+      interval: monthly
     groups:
       all:
         patterns: ["*"]
 
-  - package-ecosystem: "docker"
-    directory: "/.devcontainer"
+  - package-ecosystem: docker
+    directory: /.devcontainer
     schedule:
-      interval: "weekly"
+      interval: monthly
     groups:
       all:
         patterns: ["*"]
 
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "weekly"
+      interval: monthly
     groups:
       all:
         patterns: ["*"]
