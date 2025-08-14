@@ -37,8 +37,7 @@
 \renewcommand{\personalinfofont}{\footnotesize}
 \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
 \renewcommand{\cvsubsectionfont}{\large\bfseries}
-
-\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvItemMarker}{\small\textbullet}
 \renewcommand{\cvRatingMarker}{\faCircle}
 
 \begin{document}
@@ -64,8 +63,8 @@
 	\begin{itemize}
 		\item Worked as a backend developer in a team of 6 to create a web application for remote control of industrial power supply units (PSUs) and uninterruptible power supplies (UPSs).
 		\item Used industrial communication protocols such as \href{https://profinetuniversity.com/naming-addressing/profinet-dcp/}{DCP} and \href{https://opcfoundation.org/about/opc-technologies/opc-ua/}{OPC UA} to communicate with devices.
-		\item Used TypeScript, Node.js, and Express to create RESTful APIs for the application.
-		\item Used GitLab to set up a complex CI/CD pipeline for the project.
+		\item Used \href{https://www.typescriptlang.org/}{TypeScript}, \href{https://nodejs.org/}{Node.js}, and \href{https://expressjs.com/}{Express} to create RESTful APIs for the application.
+		\item Used \href{https://gitlab.com/}{GitLab} to set up a complex CI/CD pipeline for the project.
 		\item Regularly participated in code reviews and provided feedback to team members.
 		\item Used tools such as \href{https://turborepo.com/}{TurboRepo} and \href{https://pnpm.io/}{pnpm} to manage project builds and dependencies.
 		\item Interviewed candidates for the team and provided feedback on their technical skills.
@@ -83,19 +82,17 @@
 	\bigskip
 	\cvsection{Education}
 
-	\cvevent{Master's degree\ $\mid$ Machine learning and artificial intelligence}{\href{https://fi.muni.cz/}{Faculty of Informatics, Masaryk University}}{Jun 2025 -- \textbf{present}}{Brno}
+	\cvevent{Master's degree \textbullet\ Machine learning and artificial intelligence}{\href{https://fi.muni.cz/}{Faculty of Informatics, Masaryk University}}{Jun 2025 -- \textbf{present}}{Brno}
 
 	\divider
 
-	\cvevent{Bachelor's degree\ $\mid$ Programming and development}{\href{https://fi.muni.cz/}{Faculty of Informatics, Masaryk University}}{Sep 2021 -- Jun 2025}{Brno}
-	\begin{itemize}
-		\item Dean's Award for an Outstanding Final Thesis (\href{https://is.muni.cz/th/ddfps/}{\enquote{A Manipulation Library for Scalable Vector Graphics}})
-	\end{itemize}
+	\cvevent{Bachelor's degree \textbullet\ Programming and development}{\href{https://fi.muni.cz/}{Faculty of Informatics, Masaryk University}}{Sep 2021 -- Jun 2025}{Brno}
+	\faMedal Dean's Award for an Outstanding Final Thesis \\ \quad (\href{https://is.muni.cz/th/ddfps/}{\enquote{A Manipulation Library for Scalable Vector Graphics}})
 
 	\switchcolumn
 
 	\cvsection{Strengths \& interests}
-  \smallskip
+	\smallskip
 
 	\cvtag{\faEye Eye for detail}
 	\cvtag{\faBolt Enthusiastic}
@@ -110,12 +107,14 @@
 	\cvtag{\faGithub Open-source}
 	\cvtag{\faServer Self-hosting}
 	\cvtag{\faFilm TV shows}
-	\cvtag{\faGamepad Gaming}
+	\cvtag{\faGamepad Gaming} \\
+	\cvtag{\faMusic Music}
+	\cvtag{\faSwimmer Swimming}
 
 	\medskip
 
 	\cvsection{Technology}
-  \smallskip
+	\smallskip
 
 	\href{https://python.org/}{\cvtag{\faPython Python}}
 	\cvtag{\faJs JavaScript}
@@ -137,28 +136,39 @@
 
 	\medskip
 	\cvsection{Languages}
-  \smallskip
+	\smallskip
 
 	\cvskill{Czech}{5}
-  \medskip
+	\medskip
 	\cvskill{English}{4.5}
 
 	\medskip
 	\cvsection{Projects}
 
-	\cvevent{\href{https://github.com/reznakt/svglab}{svglab}}{Bachelor's thesis $\mid$ \href{https://fi.muni.cz/}{Faculty of Informatics, Masaryk University}}{Oct 2024 -- present}{}
+	\cvevent{\href{https://github.com/reznakt/svglab}{\faGithub svglab}}{}{}{}
 	\begin{itemize}
-		\item An open-source manipulation library for Scalable Vector Graphics (SVG)
-		\item Bachelor's thesis
+		\item An open-source Python library for manipulating and optimizing SVG documents.
+		\item Created as a part of my bachelor's thesis.
+		\item Supports all SVG elements and attributes, unlike other libraries that only support a subset of SVG.
+		\item Has the potential to become the new standard for SVG manipulation in the Python ecosystem.
 	\end{itemize}
 
 	\divider
 
-	\cvevent{\href{https://github.com/reznakt/ray-casting}{ray-casting}}{Personal project}{May 2023 -- present}{}
+	\cvevent{\href{https://github.com/reznakt/dotfiles}{\faGithub dotfiles}}{}{}{}
 	\begin{itemize}
-		\item A simple ray-caster built with C99 and SDL2
-		\item includes a test runner made from scratch
-		\item built with Emscripten to allow people to play online
+		\item A collection of my personal configuration files for my Linux machines.
+		\item Includes configuration files for \href{https://neovim.io/}{Neovim}, \href{https://www.zsh.org/}{Zsh}, \href{https://hyprland.org/}{Hyprland}, \href{https://nixos.org/}{NixOS}, and many more.
+		\item Allows me to declaratively manage my system configuration and easily replicate it on all my machines.
+	\end{itemize}
+
+	\divider
+
+	\cvevent{\href{https://github.com/reznakt/ray-casting}{\faGithub ray-casting}}{}{}{}
+	\begin{itemize}
+		\item A simple \href{https://en.wikipedia.org/wiki/Ray_casting}{ray-caster} built with C99 and \href{https://www.libsdl.org/}{SDL2}.
+		\item Includes a test runner made from scratch.
+		\item Built with \href{https://emscripten.org/}{Emscripten} to allow people to play online.
 	\end{itemize}
 \end{paracol}
 \end{document}
